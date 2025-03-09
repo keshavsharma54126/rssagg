@@ -1,7 +1,9 @@
 version: "2"
 sql:
-  - schema: "sql/schema"
-    queries: "sql/querries"
+  - schema: 
+      - "sql/schema/001_create_users_table.sql"
+      - "sql/schema/002_add_api_key.sql"
+    queries: "sql/queries"
     engine: "postgresql"
     gen:
       go:
